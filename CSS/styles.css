@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.meta{
+    display: flex;
+}
+
+.pbi-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.pbi-container h1{
+    grid-area: 1 / 1 / 2 / -1;
+    text-align: center;
+}
+
+.pbi-container iframe{
+    grid-area: 2 / 1 / -1 / -1;
+}
